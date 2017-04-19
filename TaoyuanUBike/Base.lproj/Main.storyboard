@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ9-Np-QOs">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ZxA-Z3-ZsJ"/>
+                                </connections>
+                            </mapView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpY-hC-6uR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="桃園UBike" id="YmK-xg-6MH">
+                                        <barButtonItem key="rightBarButtonItem" title="我的收藏" id="ftj-Gz-4Kf">
+                                            <connections>
+                                                <action selector="showCollectViewAction:" destination="BYZ-38-t0r" id="ZoJ-4S-Iso"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZQ9-Np-QOs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4hL-Hx-fHn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZQ9-Np-QOs" secondAttribute="bottom" id="B1Q-Xf-auv"/>
+                            <constraint firstAttribute="trailing" secondItem="NpY-hC-6uR" secondAttribute="trailing" id="Buh-cw-WH2"/>
+                            <constraint firstItem="ZQ9-Np-QOs" firstAttribute="top" secondItem="NpY-hC-6uR" secondAttribute="bottom" id="Kzx-oT-3bh"/>
+                            <constraint firstItem="NpY-hC-6uR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YU2-4G-LW1"/>
+                            <constraint firstAttribute="trailing" secondItem="ZQ9-Np-QOs" secondAttribute="trailing" id="YnP-Wb-LrT"/>
+                            <constraint firstItem="NpY-hC-6uR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yQr-yB-quW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="homePageNavBar" destination="NpY-hC-6uR" id="byW-MG-xa7"/>
+                        <outlet property="mapView" destination="ZQ9-Np-QOs" id="FlN-0D-KDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>

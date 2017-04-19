@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360C67D01E6EFB3E00D37891 /* Cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 360C67AC1E6EFB3E00D37891 /* Cancel.png */; };
+		360C67D11E6EFB3E00D37891 /* Location.png in Resources */ = {isa = PBXBuildFile; fileRef = 360C67AD1E6EFB3E00D37891 /* Location.png */; };
+		360C67D41E6EFB3E00D37891 /* Refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 360C67B01E6EFB3E00D37891 /* Refresh.png */; };
+		360C67D91E6EFB3E00D37891 /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = 360C67B51E6EFB3E00D37891 /* Status.png */; };
+		364A1B601E77F5CE00EB299E /* Bike@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 364A1B5C1E77F5CE00EB299E /* Bike@2x.png */; };
+		364A1B611E77F5CE00EB299E /* Bike@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 364A1B5D1E77F5CE00EB299E /* Bike@3x.png */; };
+		364A1B621E77F5CE00EB299E /* ParkingLot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 364A1B5E1E77F5CE00EB299E /* ParkingLot@2x.png */; };
+		364A1B631E77F5CE00EB299E /* ParkingLot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 364A1B5F1E77F5CE00EB299E /* ParkingLot@3x.png */; };
+		364A72F91E5EB654009E49F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 364A72F81E5EB654009E49F8 /* main.m */; };
+		364A72FC1E5EB654009E49F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 364A72FB1E5EB654009E49F8 /* AppDelegate.m */; };
+		364A72FF1E5EB654009E49F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 364A72FE1E5EB654009E49F8 /* ViewController.m */; };
+		364A73021E5EB654009E49F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364A73001E5EB654009E49F8 /* Main.storyboard */; };
+		364A73041E5EB654009E49F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364A73031E5EB654009E49F8 /* Assets.xcassets */; };
+		364A73071E5EB654009E49F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364A73051E5EB654009E49F8 /* LaunchScreen.storyboard */; };
+		364A73101E5EBDA6009E49F8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364A730F1E5EBDA6009E49F8 /* MapKit.framework */; };
+		364A733F1E5ECF92009E49F8 /* CustomPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 364A733E1E5ECF92009E49F8 /* CustomPinAnnotation.m */; };
+		364A73591E6048DB009E49F8 /* StopInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 364A73581E6048DB009E49F8 /* StopInfoView.m */; };
+		368A4ACD1E6BAB8400B88CBC /* CollectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368A4ACC1E6BAB8400B88CBC /* CollectCell.xib */; };
+		368A4AD01E6BABFB00B88CBC /* CustomCollectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 368A4ACF1E6BABFB00B88CBC /* CustomCollectTableViewCell.m */; };
+		36C9DB4D1E72D9640033068A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C9DB4C1E72D9640033068A /* Reachability.m */; };
+		36E913AF1E62F5510078FD36 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E913AE1E62F5510078FD36 /* CoreLocation.framework */; };
+		36E913BD1E63CBEE0078FD36 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E913BC1E63CBEE0078FD36 /* NotificationCenter.framework */; };
+		36E913C11E63CBEE0078FD36 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E913C01E63CBEE0078FD36 /* TodayViewController.m */; };
+		36E913C41E63CBEE0078FD36 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36E913C21E63CBEE0078FD36 /* MainInterface.storyboard */; };
+		36E913C81E63CBEE0078FD36 /* UBikeWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 36E913BB1E63CBEE0078FD36 /* UBikeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		36E913D11E63F9DC0078FD36 /* TodayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E913D01E63F9DC0078FD36 /* TodayTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36E913C61E63CBEE0078FD36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 364A72EC1E5EB654009E49F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36E913BA1E63CBEE0078FD36;
+			remoteInfo = UBikeWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36E913CC1E63CBEE0078FD36 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				36E913C81E63CBEE0078FD36 /* UBikeWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		360C67AC1E6EFB3E00D37891 /* Cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel.png; sourceTree = "<group>"; };
+		360C67AD1E6EFB3E00D37891 /* Location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Location.png; sourceTree = "<group>"; };
+		360C67B01E6EFB3E00D37891 /* Refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Refresh.png; sourceTree = "<group>"; };
+		360C67B51E6EFB3E00D37891 /* Status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Status.png; sourceTree = "<group>"; };
+		364A1B5C1E77F5CE00EB299E /* Bike@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bike@2x.png"; sourceTree = "<group>"; };
+		364A1B5D1E77F5CE00EB299E /* Bike@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bike@3x.png"; sourceTree = "<group>"; };
+		364A1B5E1E77F5CE00EB299E /* ParkingLot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ParkingLot@2x.png"; sourceTree = "<group>"; };
+		364A1B5F1E77F5CE00EB299E /* ParkingLot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ParkingLot@3x.png"; sourceTree = "<group>"; };
+		364A72F41E5EB654009E49F8 /* TaoyuanUBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaoyuanUBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		364A72F81E5EB654009E49F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		364A72FA1E5EB654009E49F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		364A72FB1E5EB654009E49F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		364A72FD1E5EB654009E49F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		364A72FE1E5EB654009E49F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		364A73011E5EB654009E49F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		364A73031E5EB654009E49F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		364A73061E5EB654009E49F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		364A73081E5EB654009E49F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		364A730F1E5EBDA6009E49F8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		364A733D1E5ECF92009E49F8 /* CustomPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPinAnnotation.h; sourceTree = "<group>"; };
+		364A733E1E5ECF92009E49F8 /* CustomPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPinAnnotation.m; sourceTree = "<group>"; };
+		364A73571E6048DB009E49F8 /* StopInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopInfoView.h; sourceTree = "<group>"; };
+		364A73581E6048DB009E49F8 /* StopInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopInfoView.m; sourceTree = "<group>"; };
+		368A4ACC1E6BAB8400B88CBC /* CollectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectCell.xib; sourceTree = "<group>"; };
+		368A4ACE1E6BABFB00B88CBC /* CustomCollectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectTableViewCell.h; sourceTree = "<group>"; };
+		368A4ACF1E6BABFB00B88CBC /* CustomCollectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectTableViewCell.m; sourceTree = "<group>"; };
+		36C9DB4B1E72D9640033068A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		36C9DB4C1E72D9640033068A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		36E913AE1E62F5510078FD36 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		36E913BB1E63CBEE0078FD36 /* UBikeWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UBikeWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E913BC1E63CBEE0078FD36 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		36E913BF1E63CBEE0078FD36 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		36E913C01E63CBEE0078FD36 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		36E913C31E63CBEE0078FD36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		36E913C51E63CBEE0078FD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36E913CD1E63F5790078FD36 /* TaoyuanUBike.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaoyuanUBike.entitlements; sourceTree = "<group>"; };
+		36E913CE1E63F5B00078FD36 /* UBikeWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UBikeWidget.entitlements; sourceTree = "<group>"; };
+		36E913CF1E63F9DC0078FD36 /* TodayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayTableViewCell.h; sourceTree = "<group>"; };
+		36E913D01E63F9DC0078FD36 /* TodayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		364A72F11E5EB654009E49F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E913AF1E62F5510078FD36 /* CoreLocation.framework in Frameworks */,
+				364A73101E5EBDA6009E49F8 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36E913B81E63CBEE0078FD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E913BD1E63CBEE0078FD36 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		360C67911E6EFB3E00D37891 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				364A1B5C1E77F5CE00EB299E /* Bike@2x.png */,
+				364A1B5D1E77F5CE00EB299E /* Bike@3x.png */,
+				364A1B5E1E77F5CE00EB299E /* ParkingLot@2x.png */,
+				364A1B5F1E77F5CE00EB299E /* ParkingLot@3x.png */,
+				360C67AC1E6EFB3E00D37891 /* Cancel.png */,
+				360C67AD1E6EFB3E00D37891 /* Location.png */,
+				360C67B01E6EFB3E00D37891 /* Refresh.png */,
+				360C67B51E6EFB3E00D37891 /* Status.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		364A72EB1E5EB654009E49F8 = {
+			isa = PBXGroup;
+			children = (
+				364A72F61E5EB654009E49F8 /* TaoyuanUBike */,
+				36E913BE1E63CBEE0078FD36 /* UBikeWidget */,
+				364A72F51E5EB654009E49F8 /* Products */,
+				364A730E1E5EBDA6009E49F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		364A72F51E5EB654009E49F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				364A72F41E5EB654009E49F8 /* TaoyuanUBike.app */,
+				36E913BB1E63CBEE0078FD36 /* UBikeWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		364A72F61E5EB654009E49F8 /* TaoyuanUBike */ = {
+			isa = PBXGroup;
+			children = (
+				36E913CD1E63F5790078FD36 /* TaoyuanUBike.entitlements */,
+				36C9DB4B1E72D9640033068A /* Reachability.h */,
+				36C9DB4C1E72D9640033068A /* Reachability.m */,
+				364A72FA1E5EB654009E49F8 /* AppDelegate.h */,
+				364A72FB1E5EB654009E49F8 /* AppDelegate.m */,
+				364A72FD1E5EB654009E49F8 /* ViewController.h */,
+				364A72FE1E5EB654009E49F8 /* ViewController.m */,
+				364A73001E5EB654009E49F8 /* Main.storyboard */,
+				368A4ACC1E6BAB8400B88CBC /* CollectCell.xib */,
+				368A4ACE1E6BABFB00B88CBC /* CustomCollectTableViewCell.h */,
+				368A4ACF1E6BABFB00B88CBC /* CustomCollectTableViewCell.m */,
+				364A73571E6048DB009E49F8 /* StopInfoView.h */,
+				364A73581E6048DB009E49F8 /* StopInfoView.m */,
+				364A733D1E5ECF92009E49F8 /* CustomPinAnnotation.h */,
+				364A733E1E5ECF92009E49F8 /* CustomPinAnnotation.m */,
+				364A73031E5EB654009E49F8 /* Assets.xcassets */,
+				364A73051E5EB654009E49F8 /* LaunchScreen.storyboard */,
+				364A73081E5EB654009E49F8 /* Info.plist */,
+				360C67911E6EFB3E00D37891 /* image */,
+				364A72F71E5EB654009E49F8 /* Supporting Files */,
+			);
+			path = TaoyuanUBike;
+			sourceTree = "<group>";
+		};
+		364A72F71E5EB654009E49F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				364A72F81E5EB654009E49F8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		364A730E1E5EBDA6009E49F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36E913AE1E62F5510078FD36 /* CoreLocation.framework */,
+				364A730F1E5EBDA6009E49F8 /* MapKit.framework */,
+				36E913BC1E63CBEE0078FD36 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36E913BE1E63CBEE0078FD36 /* UBikeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				36E913CE1E63F5B00078FD36 /* UBikeWidget.entitlements */,
+				36E913BF1E63CBEE0078FD36 /* TodayViewController.h */,
+				36E913C01E63CBEE0078FD36 /* TodayViewController.m */,
+				36E913CF1E63F9DC0078FD36 /* TodayTableViewCell.h */,
+				36E913D01E63F9DC0078FD36 /* TodayTableViewCell.m */,
+				36E913C21E63CBEE0078FD36 /* MainInterface.storyboard */,
+				36E913C51E63CBEE0078FD36 /* Info.plist */,
+			);
+			path = UBikeWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		364A72F31E5EB654009E49F8 /* TaoyuanUBike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364A730B1E5EB654009E49F8 /* Build configuration list for PBXNativeTarget "TaoyuanUBike" */;
+			buildPhases = (
+				364A72F01E5EB654009E49F8 /* Sources */,
+				364A72F11E5EB654009E49F8 /* Frameworks */,
+				364A72F21E5EB654009E49F8 /* Resources */,
+				36E913CC1E63CBEE0078FD36 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36E913C71E63CBEE0078FD36 /* PBXTargetDependency */,
+			);
+			name = TaoyuanUBike;
+			productName = TaoyuanUBike;
+			productReference = 364A72F41E5EB654009E49F8 /* TaoyuanUBike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36E913BA1E63CBEE0078FD36 /* UBikeWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36E913C91E63CBEE0078FD36 /* Build configuration list for PBXNativeTarget "UBikeWidget" */;
+			buildPhases = (
+				36E913B71E63CBEE0078FD36 /* Sources */,
+				36E913B81E63CBEE0078FD36 /* Frameworks */,
+				36E913B91E63CBEE0078FD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UBikeWidget;
+			productName = UBikeWidget;
+			productReference = 36E913BB1E63CBEE0078FD36 /* UBikeWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		364A72EC1E5EB654009E49F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = WEITING;
+				TargetAttributes = {
+					364A72F31E5EB654009E49F8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = A5W78287P6;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					36E913BA1E63CBEE0078FD36 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = A5W78287P6;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 364A72EF1E5EB654009E49F8 /* Build configuration list for PBXProject "TaoyuanUBike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 364A72EB1E5EB654009E49F8;
+			productRefGroup = 364A72F51E5EB654009E49F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				364A72F31E5EB654009E49F8 /* TaoyuanUBike */,
+				36E913BA1E63CBEE0078FD36 /* UBikeWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		364A72F21E5EB654009E49F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360C67D01E6EFB3E00D37891 /* Cancel.png in Resources */,
+				364A73071E5EB654009E49F8 /* LaunchScreen.storyboard in Resources */,
+				364A1B631E77F5CE00EB299E /* ParkingLot@3x.png in Resources */,
+				368A4ACD1E6BAB8400B88CBC /* CollectCell.xib in Resources */,
+				360C67D41E6EFB3E00D37891 /* Refresh.png in Resources */,
+				364A1B601E77F5CE00EB299E /* Bike@2x.png in Resources */,
+				364A73041E5EB654009E49F8 /* Assets.xcassets in Resources */,
+				360C67D11E6EFB3E00D37891 /* Location.png in Resources */,
+				364A1B621E77F5CE00EB299E /* ParkingLot@2x.png in Resources */,
+				364A73021E5EB654009E49F8 /* Main.storyboard in Resources */,
+				364A1B611E77F5CE00EB299E /* Bike@3x.png in Resources */,
+				360C67D91E6EFB3E00D37891 /* Status.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36E913B91E63CBEE0078FD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E913C41E63CBEE0078FD36 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		364A72F01E5EB654009E49F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364A73591E6048DB009E49F8 /* StopInfoView.m in Sources */,
+				368A4AD01E6BABFB00B88CBC /* CustomCollectTableViewCell.m in Sources */,
+				364A733F1E5ECF92009E49F8 /* CustomPinAnnotation.m in Sources */,
+				36C9DB4D1E72D9640033068A /* Reachability.m in Sources */,
+				364A72FF1E5EB654009E49F8 /* ViewController.m in Sources */,
+				364A72FC1E5EB654009E49F8 /* AppDelegate.m in Sources */,
+				364A72F91E5EB654009E49F8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36E913B71E63CBEE0078FD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36E913C11E63CBEE0078FD36 /* TodayViewController.m in Sources */,
+				36E913D11E63F9DC0078FD36 /* TodayTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36E913C71E63CBEE0078FD36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36E913BA1E63CBEE0078FD36 /* UBikeWidget */;
+			targetProxy = 36E913C61E63CBEE0078FD36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		364A73001E5EB654009E49F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				364A73011E5EB654009E49F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		364A73051E5EB654009E49F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				364A73061E5EB654009E49F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		36E913C21E63CBEE0078FD36 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36E913C31E63CBEE0078FD36 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		364A73091E5EB654009E49F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		364A730A1E5EB654009E49F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		364A730C1E5EB654009E49F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TaoyuanUBike/TaoyuanUBike.entitlements;
+				DEVELOPMENT_TEAM = A5W78287P6;
+				INFOPLIST_FILE = TaoyuanUBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WEITING.TaoyuanUBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		364A730D1E5EB654009E49F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TaoyuanUBike/TaoyuanUBike.entitlements;
+				DEVELOPMENT_TEAM = A5W78287P6;
+				INFOPLIST_FILE = TaoyuanUBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WEITING.TaoyuanUBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		36E913CA1E63CBEE0078FD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = UBikeWidget/UBikeWidget.entitlements;
+				DEVELOPMENT_TEAM = A5W78287P6;
+				INFOPLIST_FILE = UBikeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WEITING.TaoyuanUBike.UBikeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		36E913CB1E63CBEE0078FD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = UBikeWidget/UBikeWidget.entitlements;
+				DEVELOPMENT_TEAM = A5W78287P6;
+				INFOPLIST_FILE = UBikeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WEITING.TaoyuanUBike.UBikeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		364A72EF1E5EB654009E49F8 /* Build configuration list for PBXProject "TaoyuanUBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364A73091E5EB654009E49F8 /* Debug */,
+				364A730A1E5EB654009E49F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		364A730B1E5EB654009E49F8 /* Build configuration list for PBXNativeTarget "TaoyuanUBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364A730C1E5EB654009E49F8 /* Debug */,
+				364A730D1E5EB654009E49F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36E913C91E63CBEE0078FD36 /* Build configuration list for PBXNativeTarget "UBikeWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36E913CA1E63CBEE0078FD36 /* Debug */,
+				36E913CB1E63CBEE0078FD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 364A72EC1E5EB654009E49F8 /* Project object */;
+}

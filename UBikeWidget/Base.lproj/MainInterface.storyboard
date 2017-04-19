@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="36" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vB4-7W-FcE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="700"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="36" id="o2u-tE-waY" customClass="TodayTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="36"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o2u-tE-waY" id="iZ2-rR-WAs">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="M4Y-Lb-cyx" id="kba-DR-Hw7"/>
+                                    <outlet property="delegate" destination="M4Y-Lb-cyx" id="39V-Ed-vh5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="vB4-7W-FcE" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="6fZ-3P-jTK"/>
+                            <constraint firstItem="vB4-7W-FcE" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="7cK-HB-2xY"/>
+                            <constraint firstAttribute="trailing" secondItem="vB4-7W-FcE" secondAttribute="trailing" id="IKg-Wc-uyG"/>
+                            <constraint firstItem="vB4-7W-FcE" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="USI-BY-yMk"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="vB4-7W-FcE" secondAttribute="bottom" id="YL4-GL-zIM"/>
+                            <constraint firstAttribute="trailing" secondItem="vB4-7W-FcE" secondAttribute="trailing" id="ehT-DZ-22M"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="vB4-7W-FcE" secondAttribute="bottom" id="lg2-H0-dnX"/>
+                            <constraint firstItem="vB4-7W-FcE" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="uaZ-KA-pVy"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="700"/>
+                    <connections>
+                        <outlet property="tableView" destination="vB4-7W-FcE" id="OHj-t3-DQL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="111.54422788605699"/>
+        </scene>
+    </scenes>
+</document>
